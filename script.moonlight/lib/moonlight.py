@@ -48,8 +48,8 @@ class _HTTP_DATA(ctypes.Structure):
 
 class LibGameStream:
     def __init__(self, libpath = ""):
-        self.commonlib = ctypes.cdll.LoadLibrary(os.path.join(libpath, "libmoonlight-common.so.2"))
-        self.gslib = ctypes.cdll.LoadLibrary(os.path.join(libpath, "libgamestream.so.2"))
+        self.commonlib = ctypes.cdll.LoadLibrary(os.path.join(libpath, "libmoonlight-common.so.3"))
+        self.gslib = ctypes.cdll.LoadLibrary(os.path.join(libpath, "libgamestream.so.3"))
         self.connected = False
         self.address = ""
         self.key_dir = ""
